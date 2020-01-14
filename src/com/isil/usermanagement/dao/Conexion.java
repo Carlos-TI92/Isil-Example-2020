@@ -13,7 +13,7 @@ public class Conexion {
 		Connection connection = null;
 		try {
 			Class.forName(Constants.JDBC_CLASS);
-			connection = DriverManager.getConnection(Constants.JDBC_URL,Constants.JDBC_USERNAME , null);
+			connection = DriverManager.getConnection(Constants.JDBC_URL,Constants.JDBC_USERNAME , Constants.JDBC_PASSWORD);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
